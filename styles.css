@@ -1,0 +1,6 @@
+* { /* Reseteamos los valores predeterminados por medio del selector universal */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
