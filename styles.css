@@ -8,11 +8,13 @@
   --fondo-header: #000;
   --fondo-sidebar: linear-gradient(to right,#000, #121212 );
   --fondo-main: linear-gradient(#000, #373737 );
-  --fondo-footer: #2d4bd3;
+  --fondo-footer: linear-gradient(to right,#000, #121212 );
   --color-enlaces: #fff;
   --color-titulos: #fff;  
   --color-cards: #fff;
   --color-texto-cards: #000;
+  --color-borde-sidebar: #fff;
+  --color-texto-footer: #fff;
   --tamaño-fuente-titulo-principal: 30px;
   --tamaño-fuente-titulos-secundarios: 25px;
   --tamaño-fuente-enlaces: 20px;
@@ -59,6 +61,9 @@ body {
   gap: 20px;
   grid-area: sidebar;
   background-image: var(--fondo-sidebar);
+  border-right: 2px var(--color-borde-sidebar) solid;
+  border-top: 2px var(--color-borde-sidebar) solid;
+  border-bottom: 2px var(--color-borde-sidebar) solid;
 }
 
 .aside__titulo {
@@ -116,7 +121,11 @@ body {
   max-width: 75%;
 }
 
-footer {
-  background-color: var(--fondo-footer);
+.footer {
+  background-image: var(--fondo-footer);
   grid-area: footer;
+  color: var(--color-texto-footer);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
